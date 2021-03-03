@@ -2058,6 +2058,10 @@ func MacdExt(inReal []float64, inFastPeriod int, inFastMAType MaType, inSlowPeri
 	return outMACD, outMACDSignal, outMACDHist
 }
 
+func init() {
+	print("!!!!!!!!!!!!!")
+}
+
 // MacdFix - MACD Fix 12/26
 // unstable period ~= 100
 func MacdFix(inReal []float64, inSignalPeriod int) ([]float64, []float64, []float64) {
